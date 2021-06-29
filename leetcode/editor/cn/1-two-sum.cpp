@@ -19,24 +19,16 @@ class Solution
                 if (it == hashMap.cend())
                 {
                     hashMap[num] = i;
-                }
-                else
-                {
-                    ans.push_back(i);
-                    ans.push_back(hashMap[target - num]);
-                    break;
-                }
-            }
-            return ans;
-        }
-};
-//leetcode submit region end(Prohibit modification and deletion)
 
-int main()
-{
-    Solution s;
-    vector<int> data{7, 1, 5, 3, 6, 4};
-    //vector<int> ans = s.twoSum(data,11);
-    //cout << ans[0]<<ans[1]<<endl;
-    cout << "Hello LeetCode" << endl;
+                    else
+                    {
+                        ans.push_back(i);
+                        ans.push_back(hashMap[target - num]);
+                        break;
+                    }
+                }
+                return ans;
+            }
+        };
 }
+//leetcode submit region end(Prohibit modification and deletion)

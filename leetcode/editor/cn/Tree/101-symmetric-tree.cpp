@@ -29,17 +29,6 @@ class Solution
         }
 };
 
-class Solution1
-{
-    public:
-        int maxDepth(Node *root)
-        {
-            if (root == nullptr)
-            { return 0; }
-            return std::max(maxDepth(root->left), maxDepth(root->right)) + 1
-        }
-};
-
 class Solution2
 {
     public:
